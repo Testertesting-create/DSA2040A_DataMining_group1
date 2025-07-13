@@ -63,26 +63,26 @@
 ---
 
 ## Week 2 – Data Cleaning & Enrichment
-- [ ] **ETL pipeline:**
-    - [ ] Preprocess raw CSV file to standardize format:
-        - Remove extra double quotes and trailing semicolons from headers and rows.
-        - Ensure each row has the same number of columns as the header.
-        - Standardize missing values (e.g., use empty string or NaN).
-        - Save the cleaned file as `data/raw/OSMI_Mental_Health_Cleaned.csv`.
-        - **How:** Use a Python script (with regex and string operations) to clean the file before loading into pandas.
-    - [ ] Load cleaned CSV into pandas DataFrame for further cleaning:
-        - Inspect for remaining missing values, inconsistent categories, and data types.
-        - Standardize categorical values (e.g., gender, country).
-        - Handle outliers and duplicates.
-        - Add calculated fields if needed.
-        - Save outputs to `data/transformed/`.
-    - [ ] Document all steps in `1_extract_transform.ipynb` with markdown and comments.
-- [ ] **Update `1_extract_transform.ipynb`:**
-    - [ ] Document all steps with markdown/comments
-    - [ ] Attribute sections to contributors (e.g., `# Section by Grace – Data Cleaning`)
-- [ ] **Commit changes:**
-    - [ ] Each member makes at least one commit (with clear messages)
-    - [ ] Push to GitHub
+- [✅] **ETL pipeline:**
+    - [✅] Preprocess raw CSV file to standardize format:
+        - [✅] Remove extra double quotes and trailing semicolons from headers and rows.
+        - [✅] Ensure each row has the same number of columns as the header.
+        - [✅] Standardize missing values (e.g., use empty string or NaN).
+        - [✅] Save the cleaned file as `data/raw/OSMI_Mental_Health_Cleaned.csv`.
+        - [✅] **How:** Use a Python script (with regex and string operations) to clean the file before loading into pandas.
+    - [✅] Load cleaned CSV into pandas DataFrame for further cleaning:
+        - [✅] Inspect for remaining missing values, inconsistent categories, and data types.
+        - [✅] Standardize categorical values (e.g., gender, country).
+        - [✅] Handle outliers and duplicates.
+        - [✅] Add calculated fields if needed.
+        - [✅] Save outputs to `data/transformed/`.
+    - [✅] Document all steps in `1_extract_transform.ipynb` with markdown and comments.
+- [✅] **Update `1_extract_transform.ipynb`:**
+    - [✅] Document all steps with markdown/comments
+    - [✅] Attribute sections to contributors (e.g., `# Section by Grace – Data Cleaning`)
+- [✅] **Commit changes:**
+    - [✅] Each member makes at least one commit (with clear messages)
+    - [✅] Push to GitHub
 
 ---
 
