@@ -9,22 +9,22 @@
 ---
 
 ## Folder Structure (Required)
-- [ ] Create main project folder: `DataMining_GroupProject_<GroupMembersName>/`
-    - [ ] `data/`
-        - [ ] `raw/` (store original datasets)
-        - [ ] `transformed/` (store cleaned/transformed data)
-        - [ ] `final/` (store final datasets for mining/insights)
-    - [ ] `notebooks/`
-        - [ ] `1_extract_transform.ipynb` (ETL pipeline)
-        - [ ] `2_exploratory_analysis.ipynb` (EDA & stats)
-        - [ ] `3_data_mining.ipynb` (mining techniques)
-        - [ ] `4_insights_dashboard.ipynb` (dashboard/visualization)
-    - [ ] `report/`
-        - [ ] `executive_summary.pdf` (1–2 page summary)
-        - [ ] `presentation.pptx` (final presentation deck)
-    - [ ] `requirements.txt` (all dependencies)
-    - [ ] `.gitignore` (ignore data, outputs, etc. as needed)
-    - [ ] `README.md` (project overview, instructions, contributions)
+- [✅] Create main project folder: `DataMining_GroupProject_<GroupMembersName>/`
+    - [✅] `data/`
+        - [✅] `raw/` (store original datasets)
+        - [✅] `transformed/` (store cleaned/transformed data)
+        - [✅] `final/` (store final datasets for mining/insights)
+    - [✅] `notebooks/`
+        - [✅] `1_extract_transform.ipynb` (ETL pipeline)
+        - [✅] `2_exploratory_analysis.ipynb` (EDA & stats)
+        - [✅] `3_data_mining.ipynb` (mining techniques)
+        - [✅] `4_insights_dashboard.ipynb` (dashboard/visualization)
+    - [✅] `report/`
+        - [✅] `executive_summary.pdf` (1–2 page summary)
+        - [✅] `presentation.pptx` (final presentation deck)
+    - [✅] `requirements.txt` (all dependencies)
+    - [✅] `.gitignore` (ignore data, outputs, etc. as needed)
+    - [✅] `README.md` (project overview, instructions, contributions)
 
 ---
 
