@@ -4,7 +4,7 @@
 *To be updated*
 
 ## Member Names
-- Name1 (ID: xxx)
+- Nicholas Kinyanjui - 670178
 - Name2 (ID: xxx)
 - Name3 (ID: xxx)
 - Name4 (ID: xxx)
@@ -45,12 +45,6 @@ The OSMI Mental Health in Tech Survey (2014) dataset captures self-reported info
    - `notebooks/3_data_mining.ipynb` (mining techniques)
    - `notebooks/4_insights_dashboard.ipynb` (dashboard/visualization)
 
-## Team Members & Contributions
-| Name   | ETL | Analysis | Visualization | Documentation |
-|--------|-----|----------|---------------|---------------|
-| Name1  | ✅  |          |               |               |
-| Name2  |     | ✅        |               |               |
-| Name3  |     |          | ✅             |               |
-| Name4  |     |          |               | ✅             |
+
 
 *Update this table as the project progresses to reflect actual contributions.*
