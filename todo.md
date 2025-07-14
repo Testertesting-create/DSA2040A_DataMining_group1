@@ -87,18 +87,19 @@
 ---
 
 ## Week 3 – Exploratory & Statistical Analysis
-- [ ] **EDA (Exploratory Data Analysis):**
-    - [ ] Visualize correlations (heatmaps, pairplots)
-    - [ ] Plot distributions (histograms, boxplots)
-    - [ ] Group comparisons (barplots, groupby stats)
-    - [ ] Use Pandas, Seaborn, Matplotlib
-    - [ ] Save outputs/figures as needed
-- [ ] **Update `2_exploratory_analysis.ipynb`:**
-    - [ ] Document findings with markdown
-    - [ ] Attribute sections to contributors
-- [ ] **Commit changes:**
-    - [ ] Each member makes at least one commit (with clear messages)
-    - [ ] Push to GitHub
+- [✅] **EDA (Exploratory Data Analysis):**
+    - [✅] Visualize correlations (heatmaps, pairplots)
+    - [✅] Plot distributions (histograms, boxplots)
+    - [✅] Group comparisons (barplots, groupby stats)
+    - [✅] Use Pandas, Seaborn, Matplotlib
+    - [✅] Save outputs/figures as needed
+    - [✅] Outlier detection and analysis (flagged, not removed; decision documented)
+- [✅] **Update `2_exploratory_analysis.ipynb`:**
+    - [✅] Document findings with markdown
+    - [✅] Attribute sections to contributors
+- [✅] **Commit changes:**
+    - [✅] Each member makes at least one commit (with clear messages)
+    - [✅] Push to GitHub
 
 ---
 
