@@ -48,3 +48,7 @@ The OSMI Mental Health in Tech Survey (2014) dataset captures self-reported info
 
 
 *Update this table as the project progresses to reflect actual contributions.*
+
+Click the link below to view the TODO list:
+
+# 👉 [Go to TODO list](todo.md)
