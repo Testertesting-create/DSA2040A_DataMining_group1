@@ -5,7 +5,7 @@
 
 ## Member Names
 - Nicholas Kinyanjui - 670178
-- Name2 (ID: xxx)
+- Merhawit Tesfay (ID: 670554)
 - Name3 (ID: xxx)
 - Name4 (ID: xxx)
 
