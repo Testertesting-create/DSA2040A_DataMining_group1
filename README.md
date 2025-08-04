@@ -6,7 +6,7 @@
 ## Member Names
 - Nicholas Kinyanjui - 670178
 - Merhawit Tesfay (ID: 670554)
-- Name3 (ID: xxx)
+- Faith Chakwanira - 67435
 - Name4 (ID: xxx)
 
 ## Project Summary
