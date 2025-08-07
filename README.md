@@ -1,157 +1,56 @@
-Mental Health in Tech — Data Mining Project (DSA2040A)  
-Course: Data Mining (DSA2040A)  
-Project Title: Mining Insights from the 2014 OSMI Mental Health in Tech Survey  
-Group Name: Your Group Name Here  
-Institution: United States International University - Africa (USIU-A)
+# DSA2040A Data Mining Group Project
 
-📋 Table of Contents  
-Project Overview  
-Team Members  
-Objectives  
-Dataset  
-Methodology  
-1. ETL (Extract, Transform, Load)  
-2. Exploratory Data Analysis (EDA)  
-3. Data Mining  
-Clustering  
-Classification  
-Association Rule Mining  
-4. Insights and Dashboard  
-Results Summary  
-How to Run  
-Project Structure  
-License
+## Group Name
+*To be updated*
 
----
+## Member Names
+- Name1 (ID: xxx)
+- Name2 (ID: xxx)
+- Name3 (ID: xxx)
+- Name4 (ID: xxx)
 
-## 🧠 Project Overview
-This project analyzes the 2014 OSMI Mental Health in Tech Survey to understand the factors that influence mental health outcomes and treatment-seeking behaviors among tech employees. The analysis involves a full data mining pipeline — from cleaning and exploration to clustering, classification, and association rule discovery.
+## Project Summary
+The OSMI Mental Health in Tech Survey (2014) dataset captures self-reported information from individuals working in the technology sector regarding their experiences, perceptions, and attitudes toward mental health in the workplace. It includes demographic details such as age, gender, country, and employment status, as well as responses about mental health history, access to support resources, workplace culture, and comfort in discussing mental health with employers or colleagues. The dataset aims to highlight the prevalence of mental health issues in the tech industry, identify potential stigma or barriers to seeking help, and promote awareness around mental well-being in professional environments. Collected anonymously, this data provides valuable insights for organizations, researchers, and policymakers interested in improving mental health support and policies in tech-related fields.
 
-## 👥 Team Members
+## ETL Summary
+- Raw data is preprocessed to remove formatting issues (extra quotes, semicolons, inconsistent columns).
+- Cleaned data is loaded into pandas for further cleaning: handling missing values, standardizing categories, removing duplicates, and engineering new features (e.g., age groups, region).
+- The final cleaned dataset is saved for analysis and mining.
 
-| Name                        | Student ID (Last 3 Digits) | Role/Contribution              |
-|-----------------------------|----------------------------|-------------------------------|
-| Eliyas Kidanemariam Abraha  | 123                        | Mining & Classification Lead  |
-| Merhawit Tesfay Kassa       | 456                        | EDA & Clustering Lead         |
-| [Add Others]                | ...                        | Documentation, Dashboard, etc |
+## Planned Techniques
+- **Statistical Analysis:** Descriptive statistics, correlation analysis, group comparisons.
+- **Data Mining:**
+  - Clustering (e.g., k-means)
+  - Classification (e.g., decision trees, logistic regression)
+  - Association rule mining (if applicable)
+- **Visualization:** Distributions, heatmaps, dashboards (e.g., with Seaborn, Plotly, or Dash)
 
-## 🎯 Objectives
+## Tools Used
+- Python (pandas, numpy, scikit-learn, matplotlib, seaborn, plotly)
+- Jupyter Notebook
+- Git & GitHub
 
-- To identify key demographic and workplace factors associated with mental health treatment.
-- To build models that can classify treatment-seeking behavior.
-- To cluster similar respondent profiles.
-- To discover frequent patterns using association rule mining.
+## Instructions to Run Notebooks
+1. Clone the repository:
+   ```
+   git clone (https://github.com/Testertesting-create/DSA2040A_DataMining_group1/)
+   ```
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the notebooks in order:
+   - `notebooks/1_extract_transform.ipynb` (ETL & cleaning)
+   - `notebooks/2_exploratory_analysis.ipynb` (EDA & stats)
+   - `notebooks/3_data_mining.ipynb` (mining techniques)
+   - `notebooks/4_insights_dashboard.ipynb` (dashboard/visualization)
 
-## 📂 Dataset
+## Team Members & Contributions
+| Name   | ETL | Analysis | Visualization | Documentation |
+|--------|-----|----------|---------------|---------------|
+| Name1  | ✅  |          |               |               |
+| Name2  |     | ✅        |               |               |
+| Name3  |     |          | ✅             |               |
+| Name4  |     |          |               | ✅             |
 
-- **Source:** OSMI Mental Health in Tech Survey (2014)
-- **Attributes:** Age, Gender, Country, family history, benefits, remote work, etc.
-- **Target Variable:** treatment (Yes/No)
-
-## 🔍 Methodology
-
-### 1. ETL (Extract, Transform, Load)  
-📍 Notebook: `notebooks/1_extract_transform.ipynb`
-
-- Cleaned gender, country, and age outliers.
-- Transformed categorical variables into consistent formats.
-- Created binary indicators for modeling.
-- Output saved to `data/transformed/cleaned_osmi.csv`
-
-### 2. Exploratory Data Analysis (EDA)  
-📍 Notebook: `notebooks/2_exploratory_analysis.ipynb`
-
-- Analyzed age distribution, gender balance, and country breakdown.
-- Explored relationships between mental health treatment and workplace factors.
-- Visualized correlations and categorical groupings using heatmaps and bar charts.
-
-### 3. Data Mining  
-📍 Notebook: `notebooks/3_data_mining.ipynb`
-
-#### ✅ Clustering
-- **Model:** KMeans Clustering
-- **Goal:** Group similar individuals based on mental health-related responses.
-- **Result:** Identified clusters based on remote work, family history, and workplace support.
-
-#### ✅ Classification
-- **Model:** Logistic Regression
-- **Goal:** Predict whether a respondent will seek treatment based on features.
-- **Performance Metrics:** Accuracy, precision, recall.
-
-#### ✅ Association Rule Mining
-- **Algorithm:** Apriori (via mlxtend)
-- **Goal:** Discover rules like:  
-   _If remote work = Yes and benefits = No → treatment = Yes (support: x%, confidence: y%)_
-
-### 4. Insights and Dashboard  
-📍 Notebook: `notebooks/4_insights_dashboard.ipynb` (optional/forthcoming)
-
-- Visual storytelling using Plotly and Seaborn.
-- Highlight key patterns for stakeholders (e.g., HR departments).
-- 3–5 visual narratives to explain findings to a non-technical audience.
-
-## 📊 Results Summary
-
-| Technique         | Key Insight                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| Clustering        | Employees without benefits or remote options often cluster with treatment-seekers. |
-| Classification    | Logistic Regression achieved ~83% accuracy in predicting treatment behavior. |
-| Association Rules | Lack of care options + family history strongly linked with seeking treatment. |
-
-## ▶️ How to Run
-
-### 🔧 Setup
-
-Clone the repository:
-```bash
-git clone https://github.com/<your-team-name>/DataMining_GroupProject.git
-cd DataMining_GroupProject
-```
-
-Create and activate a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-```
-
-Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-Run notebooks in order:
-```bash
-jupyter notebook
-```
-- Run: `1_extract_transform.ipynb`
-- Then: `2_exploratory_analysis.ipynb`
-- Then: `3_data_mining.ipynb`
-- Optionally: `4_insights_dashboard.ipynb`
-
-## 📁 Project Structure
-
-```
-DataMining_GroupProject/
-├── data/
-│   ├── raw/              # Original CSV dataset
-│   ├── transformed/      # Cleaned dataset after preprocessing
-│   └── final/            # Datasets used for mining and dashboarding
-│
-├── notebooks/
-│   ├── 1_extract_transform.ipynb
-│   ├── 2_exploratory_analysis.ipynb
-│   ├── 3_data_mining.ipynb
-│   └── 4_insights_dashboard.ipynb
-│
-├── report/
-│   ├── executive_summary.pdf
-│   └── presentation.pptx
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
-## 📜 License
-
-This project is for educational use under the United States International University – Africa (USIU-A) academic code. Dataset © OSMI.
+*Update this table as the project progresses to reflect actual contributions.*
