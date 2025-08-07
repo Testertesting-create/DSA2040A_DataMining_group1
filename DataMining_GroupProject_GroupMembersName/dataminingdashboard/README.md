@@ -40,6 +40,3 @@ This repository contains a Power BI Project in `.pbip` format. The project is sp
 
 ---
 
-## 📄 License
-
-Add your preferred license information here.
