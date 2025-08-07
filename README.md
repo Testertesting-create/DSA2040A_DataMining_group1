@@ -3,8 +3,7 @@
 ## Group Name
 *To be updated*
 
-## Member Names
-- Name1 (ID: xxx)
+## Member Tesfay MeTesfay(ID: xxx)
 - Name2 (ID: xxx)
 - Name3 (ID: xxx)
 - Name4 (ID: xxx)
