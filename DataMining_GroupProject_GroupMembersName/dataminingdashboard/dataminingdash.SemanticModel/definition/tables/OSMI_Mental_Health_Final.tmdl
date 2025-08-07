@@ -1,0 +1,268 @@
+table OSMI_Mental_Health_Final
+	lineageTag: dcf9d9c8-21f2-49d6-ad63-ead6f0b8322c
+
+	measure 'Treatment Rate (%)' = ```
+			
+			DIVIDE(
+			    COUNTROWS(FILTER('OSMI_Mental_Health_Final', 'OSMI_Mental_Health_Final'[treatment] = "yes")),
+			    COUNTROWS('OSMI_Mental_Health_Final')
+			) * 100
+			
+			
+			
+			```
+		lineageTag: 60f1d51e-d447-4ac3-90f7-cef381e3ed54
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Treated People Count' = ```
+			
+			CALCULATE(
+			    COUNTROWS('OSMI_Mental_Health_Final'),
+			    'OSMI_Mental_Health_Final'[treatment] = "yes"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: dbcc8e49-c092-44a4-af51-579c15756af4
+
+	measure often_work_intefere_count =
+			
+			CALCULATE(
+			    COUNTROWS('OSMI_Mental_Health_Final'),
+			    'OSMI_Mental_Health_Final'[work_interfere] = "Often"
+			)
+		formatString: 0
+		lineageTag: 18cdecde-d448-4cd5-90dc-7dfc8a9f2d82
+
+	measure Respondents = COUNTROWS(OSMI_Mental_Health_Final)
+		formatString: 0
+		lineageTag: 28d349bd-eaa7-4c72-b601-f841b56c489b
+
+	column Timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6d3ed249-0bbe-4940-b27f-b3e28b4ca556
+		summarizeBy: none
+		sourceColumn: Timestamp
+
+		variation Variation
+			isDefault
+			relationship: f2998b2e-7023-463f-bbb0-3c92e36a1bef
+			defaultHierarchy: LocalDateTable_ea9e9336-0839-4f83-b0bc-95846fccadfc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 29ee0511-561c-4864-8327-563df538cd44
+		summarizeBy: none
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = User
+
+	column Gender
+		dataType: string
+		lineageTag: 0ff9dff5-5da0-4b9f-b699-8bf737158cf4
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: de8e512a-d95a-4ca8-8a0d-12a3411858be
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: 2ad4672e-a0c1-4579-abe1-8db1a25a2283
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column self_employed
+		dataType: string
+		lineageTag: 1cd2f026-3b55-4b50-b93f-8b7cc90a5622
+		summarizeBy: none
+		sourceColumn: self_employed
+
+		annotation SummarizationSetBy = Automatic
+
+	column family_history
+		dataType: string
+		lineageTag: 7fa64d65-f58d-4187-b5e1-c4f8cdd43fc5
+		summarizeBy: none
+		sourceColumn: family_history
+
+		annotation SummarizationSetBy = Automatic
+
+	column treatment
+		dataType: string
+		lineageTag: 06a20d45-409a-4c0e-916c-78597ba8fcfa
+		summarizeBy: none
+		sourceColumn: treatment
+
+		annotation SummarizationSetBy = Automatic
+
+	column work_interfere
+		dataType: string
+		lineageTag: 7a2dbdcc-f762-47e7-beac-e1f06031cadd
+		summarizeBy: none
+		sourceColumn: work_interfere
+
+		annotation SummarizationSetBy = Automatic
+
+	column no_employees
+		dataType: string
+		lineageTag: c512747d-aa15-4536-8a42-9b0e8f2c3553
+		summarizeBy: none
+		sourceColumn: no_employees
+
+		annotation SummarizationSetBy = Automatic
+
+	column remote_work
+		dataType: string
+		lineageTag: 6087bbc1-a143-4c24-ab81-1bb02cd2a1b3
+		summarizeBy: none
+		sourceColumn: remote_work
+
+		annotation SummarizationSetBy = Automatic
+
+	column tech_company
+		dataType: string
+		lineageTag: 96803cd9-a448-4668-afab-783db5422755
+		summarizeBy: none
+		sourceColumn: tech_company
+
+		annotation SummarizationSetBy = Automatic
+
+	column benefits
+		dataType: string
+		lineageTag: bcd765cf-aac9-4b3b-8cda-3f5baf4987c8
+		summarizeBy: none
+		sourceColumn: benefits
+
+		annotation SummarizationSetBy = Automatic
+
+	column care_options
+		dataType: string
+		lineageTag: f0eeff47-d970-46b3-9da7-1156ce80e4a6
+		summarizeBy: none
+		sourceColumn: care_options
+
+		annotation SummarizationSetBy = Automatic
+
+	column wellness_program
+		dataType: string
+		lineageTag: be393966-c8a5-4cc2-a376-dbec9b9bc53f
+		summarizeBy: none
+		sourceColumn: wellness_program
+
+		annotation SummarizationSetBy = Automatic
+
+	column seek_help
+		dataType: string
+		lineageTag: b519fa65-cffc-4fab-84de-4c4c48916a41
+		summarizeBy: none
+		sourceColumn: seek_help
+
+		annotation SummarizationSetBy = Automatic
+
+	column leave
+		dataType: string
+		lineageTag: df19a427-cb99-412a-9d80-99539538afe3
+		summarizeBy: none
+		sourceColumn: leave
+
+		annotation SummarizationSetBy = Automatic
+
+	column mental_health_consequence
+		dataType: string
+		lineageTag: 637c5128-42aa-4e77-acff-0aa9916a81b8
+		summarizeBy: none
+		sourceColumn: mental_health_consequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column phys_health_consequence
+		dataType: string
+		lineageTag: ccdcc40e-626c-43cd-bae0-8d080097f96c
+		summarizeBy: none
+		sourceColumn: phys_health_consequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column coworkers
+		dataType: string
+		lineageTag: 3517f6bb-dd29-4050-a37f-7ed3f698acec
+		summarizeBy: none
+		sourceColumn: coworkers
+
+		annotation SummarizationSetBy = Automatic
+
+	column supervisor
+		dataType: string
+		lineageTag: fb67a534-df35-4c73-bfb4-562d54c81f66
+		summarizeBy: none
+		sourceColumn: supervisor
+
+		annotation SummarizationSetBy = Automatic
+
+	column mental_health_interview
+		dataType: string
+		lineageTag: 3839524b-3640-4c1d-8fbd-e652eda1536c
+		summarizeBy: none
+		sourceColumn: mental_health_interview
+
+		annotation SummarizationSetBy = Automatic
+
+	column phys_health_interview
+		dataType: string
+		lineageTag: 93f18f9c-cc2b-4599-a52c-f5e47ed707ee
+		summarizeBy: none
+		sourceColumn: phys_health_interview
+
+		annotation SummarizationSetBy = Automatic
+
+	column mental_vs_physical
+		dataType: string
+		lineageTag: 5695f410-e102-4219-bb0f-48d27e0ec0b4
+		summarizeBy: none
+		sourceColumn: mental_vs_physical
+
+		annotation SummarizationSetBy = Automatic
+
+	column obs_consequence
+		dataType: string
+		lineageTag: eb7fa748-feae-49cd-aa0d-a3410ba084ab
+		summarizeBy: none
+		sourceColumn: obs_consequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_group
+		dataType: string
+		lineageTag: 1427297f-2928-4564-a02d-1445f4c134c8
+		summarizeBy: none
+		sourceColumn: age_group
+
+		annotation SummarizationSetBy = Automatic
+
+	partition OSMI_Mental_Health_Final = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Nathan\Downloads\OSMI_Mental_Health_Final.csv"),[Delimiter=",", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Timestamp", type datetime}, {"Age", Int64.Type}, {"Gender", type text}, {"Country", type text}, {"state", type text}, {"self_employed", type text}, {"family_history", type text}, {"treatment", type text}, {"work_interfere", type text}, {"no_employees", type text}, {"remote_work", type text}, {"tech_company", type text}, {"benefits", type text}, {"care_options", type text}, {"wellness_program", type text}, {"seek_help", type text}, {"leave", type text}, {"mental_health_consequence", type text}, {"phys_health_consequence", type text}, {"coworkers", type text}, {"supervisor", type text}, {"mental_health_interview", type text}, {"phys_health_interview", type text}, {"mental_vs_physical", type text}, {"obs_consequence", type text}, {"age_group", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

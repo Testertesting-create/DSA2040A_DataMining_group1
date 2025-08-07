@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "dataminingdash"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1228d2b8-e684-4d5d-8d0b-a506ff81aea9"
+  }
+}
