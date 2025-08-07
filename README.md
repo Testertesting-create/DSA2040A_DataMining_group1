@@ -1,12 +1,12 @@
 # DSA2040A Data Mining Group Project
 
-## Group Name
-*To be updated*
 
-## Member Tesfay MeTesfay(ID: xxx)
-- Name2 (ID: xxx)
-- Name3 (ID: xxx)
-- Name4 (ID: xxx)
+
+# Team Members
+1. Nicholas Gunda Kinyanjui (@speedy-insect) 670178
+2. merhawit Tesfay(@merhawit) 670554
+3. Faith Chakwanira (@fai-alt) 670435
+4. Mark Chweya (@markchweya) 669677
 
 ## Project Summary
 The OSMI Mental Health in Tech Survey (2014) dataset captures self-reported information from individuals working in the technology sector regarding their experiences, perceptions, and attitudes toward mental health in the workplace. It includes demographic details such as age, gender, country, and employment status, as well as responses about mental health history, access to support resources, workplace culture, and comfort in discussing mental health with employers or colleagues. The dataset aims to highlight the prevalence of mental health issues in the tech industry, identify potential stigma or barriers to seeking help, and promote awareness around mental well-being in professional environments. Collected anonymously, this data provides valuable insights for organizations, researchers, and policymakers interested in improving mental health support and policies in tech-related fields.
@@ -32,7 +32,7 @@ The OSMI Mental Health in Tech Survey (2014) dataset captures self-reported info
 ## Instructions to Run Notebooks
 1. Clone the repository:
    ```
-   git clone (https://github.com/Testertesting-create/DSA2040A_DataMining_group1/)
+   git clone (https://github.com/Testertesting-create/DSA2040A_DataMining_group1)
    ```
 2. Install dependencies:
    ```
@@ -44,12 +44,5 @@ The OSMI Mental Health in Tech Survey (2014) dataset captures self-reported info
    - `notebooks/3_data_mining.ipynb` (mining techniques)
    - `notebooks/4_insights_dashboard.ipynb` (dashboard/visualization)
 
-## Team Members & Contributions
-| Name   | ETL | Analysis | Visualization | Documentation |
-|--------|-----|----------|---------------|---------------|
-| Name1  | ✅  |          |               |               |
-| Name2  |     | ✅        |               |               |
-| Name3  |     |          | ✅             |               |
-| Name4  |     |          |               | ✅             |
 
-*Update this table as the project progresses to reflect actual contributions.*
+
