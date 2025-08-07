@@ -1,0 +1,5 @@
+relationship f2998b2e-7023-463f-bbb0-3c92e36a1bef
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OSMI_Mental_Health_Final.Timestamp
+	toColumn: LocalDateTable_ea9e9336-0839-4f83-b0bc-95846fccadfc.Date
+
